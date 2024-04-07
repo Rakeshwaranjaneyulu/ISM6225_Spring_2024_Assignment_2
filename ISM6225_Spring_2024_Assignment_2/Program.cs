@@ -632,7 +632,8 @@ namespace ISM6225_Spring_2024_Assignment_2
 
             for (int i = 0; i < input.Count; i++)
             {
-                strArray[i] = "" + input[i] + ""; // Enclose each string in double quotes
+                strArray[i] = "" + input[i] + "";
+                // Enclose each string in double quotes
             }
 
             // Join the strings in strArray with commas and enclose them in square brackets

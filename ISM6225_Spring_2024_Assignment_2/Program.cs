@@ -103,10 +103,10 @@ namespace ISM6225_Spring_2024_Assignment_2
             {
                 if (nums.Length == 0) return 0;
 
-                // Initialize the second pointer
+                // Here Initialize the second pointer
                 int j = 1;
 
-                // Iterate through the array starting from the first element
+                // here Iterate through the array starting from the first element
                 for (int i = 1; i < nums.Length; i++)
                 {
                     // If the current element is not equal to the previous element,
@@ -118,7 +118,7 @@ namespace ISM6225_Spring_2024_Assignment_2
                     }
                 }
 
-                // The value of j indicates the number of unique elements
+                // And The value of j indicates the number of unique elements
                 return j;
             }
             catch (Exception)
@@ -158,7 +158,7 @@ namespace ISM6225_Spring_2024_Assignment_2
                 // Pointer to keep track of the index of the last non-zero element found
                 int lastNonZeroFoundAt = 0;
 
-                // Iterate through the array
+                // Iterating through the array
                 for (int cur = 0; cur < nums.Length; cur++)
                 {
                     // If the current element is not zero, swap it with the element at lastNonZeroFoundAt
@@ -259,11 +259,11 @@ namespace ISM6225_Spring_2024_Assignment_2
                         }
                         else if (sum < 0)
                         {
-                            left++; // Need a larger number
+                            left++; // here we Need a Larg number
                         }
                         else
                         {
-                            right--; // Need a smaller number
+                            right--; // Need a small number
                         }
                     }
                 }
@@ -329,7 +329,7 @@ namespace ISM6225_Spring_2024_Assignment_2
                     }
                 }
 
-                // Return the longest streak of consecutive 1s found in the array.
+                // Here we Return the longest streak of consecutive 1s found in the array.
                 return maxStreak;
             }
             catch (Exception)
@@ -510,22 +510,22 @@ namespace ISM6225_Spring_2024_Assignment_2
             try
             {
                 // Write your code here and you can modify the return value according to the requirements
-                // Sort the array in non-ascending order
+                // Here we need to Sort the array in non-ascending order
                 Array.Sort(nums);
                 Array.Reverse(nums);
 
                 // Iterate through the array to find the largest perimeter
                 for (int i = 0; i < nums.Length - 2; i++)
                 {
-                    // Check if the three numbers can form a triangle
+                    // Check if  three numbers can form a triangle
                     if (nums[i] < nums[i + 1] + nums[i + 2])
                     {
-                        // If they can, return their sum as the largest perimeter
+                        // If it is possible, return their sum as the largest perimeter
                         return nums[i] + nums[i + 1] + nums[i + 2];
                     }
                 }
 
-                // If no such set exists, return 0
+                // If not possible such set exists, return 0
                 return 0;
             }
             catch (Exception)
@@ -583,7 +583,7 @@ namespace ISM6225_Spring_2024_Assignment_2
                 // Continuously loop as long as 's' contains 'part'
                 while (s.Contains(part))
                 {
-                    // Find the index of the leftmost occurrence of 'part' in 's'
+                    // Find the index of leftmost occurrence of 'part' in 's'
                     int index = s.IndexOf(part);
                     // If 'part' is found, remove it from 's'
                     if (index != -1)
